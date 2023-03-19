@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.best-players {
+    position: absolute;
+    top: 0;
+    right: 500px;
+    width: 400px;
+    min-height: 300px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.players-list {
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.players-list > li:nth-child(1) {color: gold;}
+.players-list > li:nth-child(2) {color: silver;}
+.players-list > li:nth-child(3) {color: burlywood;}
+
+
+.players-list > li:nth-child(1)::after {content: url("../image/gold.png"); margin-left: 10px;}
+.players-list > li:nth-child(2)::after {content: url("../image/silver.png"); margin-left: 10px;}
+.players-list > li:nth-child(3)::after {content: url("../image/bronze.png"); margin-left: 10px;}
+
+
+
+
+.timer {
+    width: 200px;
+    min-height: 60px;
+    padding: 20px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#timer {
+    font-size: 50px;
+}
